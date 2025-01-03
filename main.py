@@ -16,6 +16,7 @@ def test_internet_speed(fake=False):
         except Exception as e:
             download_speed = 0
             print(f"Error encountered: {e}")
+            time.sleep(15)
         
     print("Download Speed: {:.2f} Mbps".format(download_speed))
     return download_speed
